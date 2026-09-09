@@ -1,0 +1,36 @@
+# Inactive inventory, not an active campaign. Copy selected entries into config/.
+job_boards:
+  - name: RemoteOK
+    provider: remoteok
+    enabled: false
+  - name: Remotive
+    provider: remotive
+    enabled: false
+  - name: Himalayas
+    provider: himalayas
+    enabled: false
+  - name: Working Nomads
+    provider: workingnomads
+    enabled: false
+  - name: We Work Remotely
+    provider: weworkremotely
+    enabled: false
+  - name: Hacker News Who Is Hiring
+    provider: hackernews
+    enabled: false
+  - name: Agentic Jobs
+    provider: agentic-jobs
+    enabled: false
+    max_pages: 3
+  - name: Cryptocurrency Jobs
+    provider: cryptocurrencyjobs
+    enabled: false
+  - name: Jobicy
+    provider: jobicy
+    enabled: false
+  - name: NoDesk
+    provider: nodesk
+    enabled: false
+  - name: 4 Day Week
+    provider: 4dayweek
+    enabled: false

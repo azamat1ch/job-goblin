@@ -1,0 +1,45 @@
+# Capability limits, not a claim of current endpoint health.
+# Every source needs a small live smoke test before being declared operational.
+native:
+  structured:
+    geography: Depends on selected provider and configured employer board.
+    limitation: Provider presence does not guarantee relevant employers or local-market coverage.
+  efinancialcareers:
+    geography: Hong Kong only in the current API wrapper.
+    profession: Financial services board; arbitrary role queries required.
+  direct_company:
+    geography: Hong Kong only for Millennium, SIG, and Optiver wrappers.
+  hk_html:
+    geography: Hong Kong SCMP and HKUST GAI listings.
+    limitation: SCMP location is assumed from this local source; verify exact role geography.
+  hk_public_company:
+    geography: Hong Kong only for Goldman Sachs, ByteDance, and Cathay wrappers.
+  eightfold_company:
+    geography: Configurable location or broad search; HSBC and Morgan Stanley presets.
+  ubs:
+    geography: Hong Kong only in the current wrapper.
+  two_sigma:
+    geography: Hong Kong only in the current feed wrapper.
+  hkstp_talent:
+    geography: Hong Kong only in the current HKSTP talent wrapper.
+  huawei:
+    geography: Hong Kong only in the current wrapper.
+  remote3:
+    geography: Remote board; individual geographic eligibility requires review.
+    profession: Web3 and crypto ecosystem.
+  web3_career:
+    geography: Remote board paths by default; individual restrictions require review.
+    profession: Web3 and crypto ecosystem.
+  linkedin:
+    geography: Configurable location; guest results may be capped or blocked.
+  browser:
+    geography: Per-source; requires an agent with browser capability.
+structured_examples:
+  portals-hk.yml:
+    geography: Hong Kong employer inventory; broad providers narrowed by explicit location_terms.
+  portals-remote.yml:
+    geography: Remote-labelled feeds; remote does not mean worldwide authorization.
+    limitation: Several feeds specialize in technology, startups, or crypto.
+  portals-global.yml:
+    geography: Example employer ATS boards, European boards, Singapore Jobstreet and Australian SEEK.
+    limitation: Biased employer inventory, not worldwide coverage; configure location_terms explicitly.

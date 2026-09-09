@@ -1,0 +1,152 @@
+# Inactive examples. Setup must select, tailor, and enable sources in config/sources.yml.
+automated:
+  - name: hk-company-boards
+    kind: structured
+    market: hk
+    config: catalog/portals-hk.yml
+    enabled: false
+  - name: remote-boards
+    kind: structured
+    market: remote
+    config: catalog/portals-remote.yml
+    enabled: false
+  - name: remote3
+    kind: remote3
+    market: remote
+    cadence_days: 1
+    enabled: false
+  - name: web3-career
+    kind: web3_career
+    market: remote
+    cadence_days: 1
+    max_pages: 2
+    paths:
+      - /remote-jobs
+    enabled: false
+  - name: global-boards
+    kind: structured
+    market: global
+    config: catalog/portals-global.yml
+    enabled: false
+  - name: efinancialcareers-hk
+    kind: efinancialcareers
+    market: hk
+    queries: []
+    enabled: false
+  - name: millennium
+    kind: direct_company
+    provider: millennium
+    market: hk
+    enabled: false
+  - name: sig
+    kind: direct_company
+    provider: sig
+    market: hk
+    enabled: false
+  - name: optiver
+    kind: direct_company
+    provider: optiver
+    market: hk
+    enabled: false
+  - name: scmp
+    kind: hk_html
+    provider: scmp
+    market: hk
+    enabled: false
+  - name: hkust-gai
+    kind: hk_html
+    provider: hkust-gai
+    market: hk
+    enabled: false
+  - name: hsbc
+    kind: eightfold_company
+    provider: hsbc
+    market: hk
+    queries: []
+    enabled: false
+    location: Hong Kong
+  - name: morgan-stanley
+    kind: eightfold_company
+    provider: morgan-stanley
+    market: hk
+    queries: []
+    enabled: false
+    location: Hong Kong
+  - name: goldman-sachs
+    kind: hk_public_company
+    provider: goldman-sachs
+    market: hk
+    enabled: false
+  - name: bytedance
+    kind: hk_public_company
+    provider: bytedance
+    market: hk
+    enabled: false
+  - name: cathay-pacific
+    kind: hk_public_company
+    provider: cathay-pacific
+    market: hk
+    enabled: false
+  - name: ubs
+    kind: ubs
+    market: hk
+    cadence_days: 7
+    enabled: false
+  - name: two-sigma
+    kind: two_sigma
+    market: hk
+    cadence_days: 7
+    enabled: false
+  - name: hkstp-talent
+    kind: hkstp_talent
+    market: hk
+    cadence_days: 3
+    enabled: false
+  - name: huawei
+    kind: huawei
+    market: hk
+    cadence_days: 7
+    enabled: false
+linkedin:
+  - name: linkedin-search
+    enabled: false
+    market: unknown
+    keywords: ''
+    location: ''
+    setup: Set keywords and location from confirmed campaign; duplicate entry for each query.
+browser:
+  - name: wellfound
+    market: remote
+    cadence_days: 3
+    url: https://wellfound.com/jobs
+    enabled: false
+  - name: yc-jobs
+    market: remote
+    cadence_days: 3
+    url: https://www.ycombinator.com/jobs
+    enabled: false
+  - name: cyberport
+    market: hk
+    cadence_days: 3
+    url: https://www.cyberport.hk/en/news/career_opportunities/
+    enabled: false
+  - name: jane-street
+    market: hk
+    cadence_days: 7
+    url: https://www.janestreet.com/join-jane-street/open-roles/
+    enabled: false
+  - name: citadel
+    market: hk
+    cadence_days: 7
+    url: https://www.citadel.com/careers/open-positions/
+    enabled: false
+  - name: bnp-paribas
+    market: hk
+    cadence_days: 7
+    url: https://group.bnpparibas/en/careers/all-job-offers/hong-kong
+    enabled: false
+  - name: hku
+    market: hk
+    cadence_days: 7
+    url: https://jobs.hku.hk/en/listing/
+    enabled: false

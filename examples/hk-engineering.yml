@@ -1,0 +1,23 @@
+# Synthetic example. Discuss preferences before adopting; not an active preset.
+version: 1
+name: Hong Kong AI Engineer search
+markets:
+  - id: hk
+    label: Hong Kong
+    location_terms: ["Hong Kong", "HK", "Kowloon"]
+    remote: false
+roles:
+  primary: [AI Engineer]
+  adjacent: [Data Engineer]
+filters:
+  exclude_titles: []
+  exclude_companies: []
+  exclude_locations: []
+  max_posting_age_days: null
+applications:
+  max_per_company_30_days: null
+  allow_seniority_mix: true
+discovery:
+  retention_days: 30
+  query_days: 21
+  overlap_days: 3

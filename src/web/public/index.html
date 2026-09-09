@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Job Search</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><h1>Job search</h1></div>
+      <nav class="views" id="views" aria-label="Dashboard view">
+        <button data-value="explore" class="active" aria-pressed="true">Explore</button>
+        <button data-value="applications" aria-pressed="false">Applications</button>
+        <button data-value="stats" aria-pressed="false">Stats</button>
+      </nav>
+      <div class="live" id="live"><i></i><span id="updated">Loading</span></div>
+    </header>
+
+    <section class="kpis" id="kpis"></section>
+
+    <section class="toolbar list-only" aria-label="Job filters">
+      <div class="tabs" id="markets">
+        <button data-value="all" class="active" aria-pressed="true">All markets</button>
+      </div>
+      <div class="controls">
+        <button id="company-chip" class="chip-filter" hidden></button>
+        <input id="search" type="search" aria-label="Search jobs" placeholder="Search title, company, description">
+        <div class="multi-filter" id="fit-filter">
+          <button type="button" id="fit-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="fit-options">Fit: no skips</button>
+          <fieldset id="fit-options" hidden>
+            <legend>Show fit categories</legend>
+            <label><input type="checkbox" value="recommended"> Recommended</label>
+            <label><input type="checkbox" value="maybe"> Worth a look</label>
+            <label><input type="checkbox" value="needs_answer"> Needs an answer</label>
+            <label><input type="checkbox" value="unreviewed"> Unreviewed</label>
+            <label><input type="checkbox" value="skip"> Skip</label>
+          </fieldset>
+        </div>
+        <select id="stage" class="applications-only" aria-label="Pipeline stage"><option value="all">All stages</option><option value="queued">Selected</option><option value="applied">Applied</option><option value="replied">Replied</option><option value="interview">Interview</option><option value="final_round">Final round</option><option value="offer">Offer</option><option value="closed">Closed</option><option value="failed">Failures</option></select>
+        <select id="sort" aria-label="Sort"><option value="fit">Sort: fit</option><option value="age">Sort: newest</option><option value="company">Sort: company</option><option value="updated">Sort: last updated</option></select>
+      </div>
+    </section>
+
+    <details class="source-panel explore-only"><summary><span>Source checks</span><span id="health-summary"></span></summary><div class="source-content"><div id="attention"></div><details><summary>Healthy sources</summary><div id="healthy"></div></details></div></details>
+
+    <section class="board list-only">
+      <table class="jobs">
+        <thead><tr><th class="c-verdict" id="th-first">Fit</th><th class="c-role">Role</th><th class="c-why" id="th-why">Why</th><th class="c-age">Age</th><th class="c-src">Source</th><th class="c-sal">Salary</th><th class="c-link"></th></tr></thead>
+        <tbody id="jobs"><tr><td colspan="7" class="empty">Loading jobs…</td></tr></tbody>
+      </table>
+      <footer class="pager" id="pager"></footer>
+    </section>
+
+    <section class="stats stats-only" id="stats" hidden></section>
+  </main>
+  <dialog id="job-dialog"><button class="close" aria-label="Close details">Close</button><div id="job-detail"></div></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

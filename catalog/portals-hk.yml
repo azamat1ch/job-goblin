@@ -1,0 +1,962 @@
+# Inactive inventory, not an active campaign. Copy selected entries into config/.
+tracked_companies:
+  - name: HKSTP
+    provider: successfactors
+    careers_url: https://careers.hkstp.org
+    assume_hk: true
+    enabled: false
+  - name: ASTRI
+    provider: successfactors
+    careers_url: https://careers.astri.org
+    assume_hk: true
+    enabled: false
+  - name: HKPC
+    provider: successfactors
+    careers_url: https://careers.hkpc.org
+    assume_hk: true
+    enabled: false
+  - name: tencent
+    provider: tencent
+    careers_url: https://careers.tencent.com/search.html
+    max_pages: 10
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: jpmorgan
+    provider: oraclecloud
+    careers_url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs
+    locationId: 300000000289330
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: standard-chartered
+    provider: successfactors
+    careers_url: https://jobs.standardchartered.com
+    sfVariant: csb
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: hk-jockey-club
+    provider: successfactors
+    careers_url: https://careers.hkjc.com
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: pccw-hkt
+    provider: successfactors
+    careers_url: https://job.pccw.com
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: hkust
+    provider: workday
+    careers_url: https://hkust.wd102.myworkdayjobs.com/en-US/HKUST
+    assume_hk: true
+    enabled: false
+  - name: JobsDB Hong Kong
+    provider: jobstreet
+    api: https://hk.jobsdb.com/api/jobsearch/v5/search
+    siteKey: HK-Main
+    searchKeywords: ''
+    maxPages: 10
+    enabled: false
+    setup: Set searchKeywords from confirmed target roles before enabling.
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: IMC
+    careers_url: https://job-boards.greenhouse.io/imc
+    api: https://boards-api.greenhouse.io/v1/boards/imc/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Jump Trading
+    careers_url: https://job-boards.greenhouse.io/jumptrading
+    api: https://boards-api.greenhouse.io/v1/boards/jumptrading/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Hudson River Trading
+    careers_url: https://job-boards.greenhouse.io/wehrtyou
+    api: https://boards-api.greenhouse.io/v1/boards/wehrtyou/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Flow Traders
+    careers_url: https://job-boards.greenhouse.io/flowtraders
+    api: https://boards-api.greenhouse.io/v1/boards/flowtraders/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Virtu
+    careers_url: https://job-boards.greenhouse.io/virtu
+    api: https://boards-api.greenhouse.io/v1/boards/virtu/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Point72
+    careers_url: https://job-boards.greenhouse.io/point72
+    api: https://boards-api.greenhouse.io/v1/boards/point72/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Qube Research
+    careers_url: https://job-boards.greenhouse.io/quberesearchandtechnologies
+    api: https://boards-api.greenhouse.io/v1/boards/quberesearchandtechnologies/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Man Group
+    careers_url: https://job-boards.greenhouse.io/mangroup
+    api: https://boards-api.greenhouse.io/v1/boards/mangroup/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: WorldQuant
+    careers_url: https://job-boards.greenhouse.io/worldquant
+    api: https://boards-api.greenhouse.io/v1/boards/worldquant/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Akuna
+    careers_url: https://job-boards.greenhouse.io/akunacapital
+    api: https://boards-api.greenhouse.io/v1/boards/akunacapital/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Eclipse Trading
+    careers_url: https://job-boards.greenhouse.io/eclipsetrading
+    api: https://boards-api.greenhouse.io/v1/boards/eclipsetrading/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Tower Research
+    careers_url: https://job-boards.greenhouse.io/towerresearchcapital
+    api: https://boards-api.greenhouse.io/v1/boards/towerresearchcapital/jobs?content=true
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Squarepoint
+    careers_url: https://job-boards.greenhouse.io/squarepointcapital
+    api: https://boards-api.greenhouse.io/v1/boards/squarepointcapital/jobs?content=true
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Schonfeld
+    careers_url: https://job-boards.greenhouse.io/schonfeld
+    api: https://boards-api.greenhouse.io/v1/boards/schonfeld/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: ExodusPoint
+    careers_url: https://job-boards.greenhouse.io/exoduspoint
+    api: https://boards-api.greenhouse.io/v1/boards/exoduspoint/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: OKX
+    careers_url: https://job-boards.greenhouse.io/okx
+    api: https://boards-api.greenhouse.io/v1/boards/okx/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Binance
+    careers_url: https://job-boards.greenhouse.io/binance
+    api: https://boards-api.greenhouse.io/v1/boards/binance/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Bybit
+    careers_url: https://job-boards.greenhouse.io/bybit
+    api: https://boards-api.greenhouse.io/v1/boards/bybit/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Amber Group
+    careers_url: https://jobs.lever.co/ambergroup
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Animoca Brands
+    careers_url: https://jobs.lever.co/animocabrands
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Gate.io
+    careers_url: https://jobs.lever.co/gate
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Coinbase
+    careers_url: https://job-boards.greenhouse.io/coinbase
+    api: https://boards-api.greenhouse.io/v1/boards/coinbase/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Fireblocks
+    careers_url: https://job-boards.greenhouse.io/fireblocks
+    api: https://boards-api.greenhouse.io/v1/boards/fireblocks/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Circle
+    careers_url: https://jobs.ashbyhq.com/circle
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Aptos
+    careers_url: https://job-boards.greenhouse.io/aptoslabs
+    api: https://boards-api.greenhouse.io/v1/boards/aptoslabs/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Mysten Labs
+    careers_url: https://jobs.ashbyhq.com/mystenlabs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Airwallex
+    careers_url: https://jobs.ashbyhq.com/airwallex
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Stripe
+    careers_url: https://job-boards.greenhouse.io/stripe
+    api: https://boards-api.greenhouse.io/v1/boards/stripe/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Adyen
+    careers_url: https://job-boards.greenhouse.io/adyen
+    api: https://boards-api.greenhouse.io/v1/boards/adyen/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Nium
+    careers_url: https://jobs.lever.co/nium
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Thunes
+    careers_url: https://job-boards.greenhouse.io/thunes
+    api: https://boards-api.greenhouse.io/v1/boards/thunes/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: CoinMarketCap
+    careers_url: https://jobs.lever.co/coinmarketcap
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Databricks
+    careers_url: https://job-boards.greenhouse.io/databricks
+    api: https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Snowflake
+    careers_url: https://jobs.ashbyhq.com/snowflake
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Datadog
+    careers_url: https://job-boards.greenhouse.io/datadog
+    api: https://boards-api.greenhouse.io/v1/boards/datadog/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Palantir
+    careers_url: https://jobs.lever.co/palantir
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Cloudflare
+    careers_url: https://job-boards.greenhouse.io/cloudflare
+    api: https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Scale AI
+    careers_url: https://job-boards.greenhouse.io/scaleai
+    api: https://boards-api.greenhouse.io/v1/boards/scaleai/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: OpenAI
+    careers_url: https://jobs.ashbyhq.com/openai
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Cohere
+    careers_url: https://jobs.ashbyhq.com/cohere
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: ElevenLabs
+    careers_url: https://jobs.ashbyhq.com/elevenlabs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Writer
+    careers_url: https://jobs.ashbyhq.com/writer
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Harvey
+    careers_url: https://jobs.ashbyhq.com/harvey
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Sierra
+    careers_url: https://jobs.ashbyhq.com/sierra
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Glean
+    careers_url: https://job-boards.greenhouse.io/gleanwork
+    api: https://boards-api.greenhouse.io/v1/boards/gleanwork/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Notion
+    careers_url: https://jobs.ashbyhq.com/notion
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Figma
+    careers_url: https://job-boards.greenhouse.io/figma
+    api: https://boards-api.greenhouse.io/v1/boards/figma/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Agoda
+    careers_url: https://job-boards.greenhouse.io/agoda
+    api: https://boards-api.greenhouse.io/v1/boards/agoda/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Deliveroo
+    careers_url: https://jobs.ashbyhq.com/deliveroo
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Lalamove
+    careers_url: https://jobs.lever.co/lalamove
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Moonshot AI
+    careers_url: https://job-boards.greenhouse.io/moonshot
+    api: https://boards-api.greenhouse.io/v1/boards/moonshot/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Thoughtworks
+    careers_url: https://job-boards.greenhouse.io/thoughtworks
+    api: https://boards-api.greenhouse.io/v1/boards/thoughtworks/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Capco
+    careers_url: https://job-boards.greenhouse.io/capco
+    api: https://boards-api.greenhouse.io/v1/boards/capco/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Spaceship
+    careers_url: https://job-boards.greenhouse.io/spaceship
+    api: https://boards-api.greenhouse.io/v1/boards/spaceship/jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Manulife
+    careers_url: https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Prudential
+    careers_url: https://prudential.wd3.myworkdayjobs.com/prudential
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Sun Life
+    careers_url: https://sunlife.wd3.myworkdayjobs.com/Experienced-Jobs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: DBS
+    careers_url: https://dbs.wd3.myworkdayjobs.com/DBS_Careers
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: NVIDIA
+    careers_url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Salesforce
+    careers_url: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Adobe
+    careers_url: https://adobe.wd5.myworkdayjobs.com/external_experienced
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: HPE
+    careers_url: https://hpe.wd5.myworkdayjobs.com/Jobsathpe
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: PwC
+    careers_url: https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Accenture
+    careers_url: https://accenture.wd103.myworkdayjobs.com/AccentureCareers
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Deutsche Bank
+    careers_url: https://db.wd3.myworkdayjobs.com/DBWebsite
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: DRW
+    careers_url: https://job-boards.greenhouse.io/drweng
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: XTX Markets
+    careers_url: https://job-boards.greenhouse.io/xtxmarketstechnologies
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Maven Securities
+    careers_url: https://job-boards.greenhouse.io/mavensecuritiesholdingltd
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Marshall Wace
+    careers_url: https://job-boards.greenhouse.io/marshallwace
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Kronos Research
+    careers_url: https://job-boards.greenhouse.io/kronosresearch
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: AXQ Capital
+    careers_url: https://job-boards.greenhouse.io/axq
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Citi
+    careers_url: https://citi.wd5.myworkdayjobs.com/2
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: HKEX
+    careers_url: https://hkex.wd3.myworkdayjobs.com/HKEXCareerPage
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: AIA
+    careers_url: https://aia.wd3.myworkdayjobs.com/External
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Mizuho
+    careers_url: https://mizuhogroup.wd102.myworkdayjobs.com/External
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: MUFG
+    careers_url: https://mufgub.wd3.myworkdayjobs.com/MUFG-Careers
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Bank of America
+    careers_url: https://ghr.wd1.myworkdayjobs.com/lateral-apac
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Kyndryl
+    careers_url: https://kyndryl.wd5.myworkdayjobs.com/KyndrylProfessionalCareers
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Crypto.com
+    careers_url: https://jobs.lever.co/crypto
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: BitMEX
+    careers_url: https://job-boards.greenhouse.io/bitmex
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Bitget
+    careers_url: https://apply.workable.com/bitget/
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: OSL
+    careers_url: https://apply.workable.com/osldotcom/
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Hex Trust
+    careers_url: https://apply.workable.com/hextrust/
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Kraken
+    careers_url: https://jobs.ashbyhq.com/kraken.com
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Goodnotes
+    careers_url: https://job-boards.greenhouse.io/goodnotes
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Nex
+    careers_url: https://job-boards.greenhouse.io/nex
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: PolyAI
+    careers_url: https://job-boards.greenhouse.io/polyai
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: BJAK
+    careers_url: https://jobs.ashbyhq.com/bjakcareer
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: StashAway
+    careers_url: https://apply.workable.com/stashaway/
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Kong
+    careers_url: https://jobs.ashbyhq.com/kong
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: Lirvana Labs
+    careers_url: https://jobs.lever.co/lirvanalabs
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
+  - name: AIFT
+    careers_url: https://job-boards.greenhouse.io/aift
+    enabled: false
+    location_terms:
+      - Hong Kong
+      - Hongkong
+      - Honk Kong
+      - Kowloon
+      - New Territories
